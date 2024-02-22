@@ -10,14 +10,14 @@ public class menu {
 		conta novaConta = new conta();
 		
 		//passando os valores individualmente nesta nova Conta
-		//chamndo o novo objeto criado e chamando nos set
+		//chamndo o novo objeto criado e chamando nos sets
 		novaConta.setNumero(325468252);
 		novaConta.setAgencia(4538);
 		novaConta.setTipo("Poupança");
 		novaConta.setTitular("Gustavo");
 		novaConta.setSaldo(25000.0f);
 		
-		//usaremos os get agora para mostrar as informações que inserimos
+		//usaremos os gets agora para mostrar as informações que inserimos
 		
 		System.out.println("Número da Conta " + novaConta.getNumero());
 		System.out.println("Número da Agencia " + novaConta.getAgencia());

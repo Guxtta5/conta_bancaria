@@ -1,5 +1,5 @@
 package conta.util;
 
-public class cores {
+public class Cores {
 
 }

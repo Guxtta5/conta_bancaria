@@ -7,11 +7,11 @@ public interface ContaRepository{
 	// crud de conta
 	public void procurarPorNumero(int numero);
 
-	public void listarTodos();
+	public void listarTodas();
 
 	public void cadastrar(Conta conta);
 
-	public void artualizar(Conta conta);
+	public void atualizar(Conta conta);
 
 	public void deletar(int numero);
 
@@ -21,4 +21,6 @@ public interface ContaRepository{
 	public void depositar(int numero, float valor);
 
 	public void tranferir(int numeroOrigem, int numeroDestino, float valor);
+
+	
 }

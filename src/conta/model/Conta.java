@@ -1,6 +1,8 @@
 package conta.model;
 
-public class Conta {
+import conta.repository.ContaRepository;
+
+public abstract class Conta implements ContaRepository {
 	
 	//ATRIBUTOS SENDO INICIALIZADOS COMO PRIVADOS PARA
 	//QUE APENAS ESSA CLASSE POSSA TER ASSECO A ELES
@@ -66,14 +68,20 @@ public class Conta {
 	}
 	
 	public boolean sacar(float valor) {
+		if(this.getSaldo() < saldo) {
+			System.out.println("\n Saldo insuficiente");
+			return false;
+		}
+		this.setSaldo(this.getSaldo() - valor);
+		return true;
+	}
+	
+	public void depositar(float valorDepositado) {
+		this.setSaldo(this.getSaldo() + valorDepositado);
 		
 	}
 	
-	public void depositar(float valor) {
-		
-	}
-	
-	public void vusializar(){
+	public void visualizar(){
 		
 	}
 	
